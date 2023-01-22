@@ -2,7 +2,7 @@
 
 package App::plx;
 
-our $VERSION = '0.902003'; # 0.902.3
+our $VERSION = '0.902003001'; # 0.902.3
 
 $VERSION = eval $VERSION;
 
@@ -630,7 +630,7 @@ sub run_action_help {
 }
 
 sub run_action_version {
-  say sprintf "%f", $VERSION;
+  say sprintf "%.9f", $VERSION;
 }
 
 sub run_action_base {
